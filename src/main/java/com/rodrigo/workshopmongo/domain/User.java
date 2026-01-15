@@ -15,7 +15,7 @@ import java.util.Objects;
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
 
-//    @MongoId(FieldType.OBJECT_ID)
+    //    @MongoId(FieldType.OBJECT_ID)
     @Id
     private String id;
 
@@ -25,7 +25,7 @@ public class User implements Serializable {
     @DBRef(lazy = true)
     private List<Post> posts = new ArrayList<>();
 
-    public User(){
+    public User() {
     }
 
     public User(String id, String name, String email) {
