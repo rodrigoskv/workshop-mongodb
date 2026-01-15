@@ -50,7 +50,4 @@ public class UserService {
             updateData(newObj, obj);
             return repo.save(newObj);
         }
-
-
-
 }
