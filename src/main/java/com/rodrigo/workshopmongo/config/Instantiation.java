@@ -1,5 +1,6 @@
 package com.rodrigo.workshopmongo.config;
 
+import com.mongodb.client.MongoClient;
 import com.rodrigo.workshopmongo.domain.User;
 import com.rodrigo.workshopmongo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ public class Instantiation implements CommandLineRunner {
 
         userRepository.deleteAll();
 
-        User maria = new User(null, "Maria Brown", "maria@gmail.com");
+        User maria = new User("teste", "Maria Brown", "maria@gmail.com");
         User alex = new User(null, "Alex Green", "alex@gmail.com");
         User bob = new User(null, "Bob Grey", "bob@gmail.com");
 
